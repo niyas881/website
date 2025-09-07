@@ -1,0 +1,201 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Autobiography — Mohammed Niyas</title>
+  <meta name="description" content="Autobiography of Mohammed Niyas" />  <!-- Google Font -->  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">  <style>
+    :root{
+      --accent:#2b6cb0;
+      --muted:#6b7280;
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --glass: rgba(255,255,255,0.6);
+      font-family: 'Inter', system-ui, -apple-system, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#f6fbff 0%,var(--bg)100%);color:#111827;line-height:1.6}
+    .container{max-width:1000px;margin:32px auto;padding:24px}
+
+    /* Header / Nav */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+    nav{display:flex;gap:12px}
+    nav a{padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--muted);font-weight:600}
+    nav a:hover{color:var(--accent)}
+    .cta{background:var(--accent);color:white;padding:8px 14px;border-radius:10px;text-decoration:none}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:28px;align-items:center}
+    .hero-card{background:var(--card);padding:28px;border-radius:14px;box-shadow:0 6px 18px rgba(17,24,39,0.06)}
+    .title{font-size:28px;margin:0 0 8px}
+    .subtitle{color:var(--muted);margin:0 0 18px}
+    .meta{display:flex;gap:12px;flex-wrap:wrap}
+    .meta .pill{background:var(--glass);padding:8px 10px;border-radius:999px;font-weight:600;color:#0f172a}
+
+    /* Photo card */
+    .photo{background:linear-gradient(180deg, rgba(43,108,176,0.12), rgba(43,108,176,0.04));padding:12px;border-radius:12px;text-align:center}
+    .photo img{width:100%;height:320px;object-fit:cover;border-radius:10px}
+
+    /* Sections */
+    section{margin-top:28px}
+    .section-title{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+    .section-title h2{margin:0;font-size:20px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(17,24,39,0.04)}
+
+    /* Timeline */
+    .timeline{display:flex;flex-direction:column;gap:16px}
+    .entry{display:flex;gap:16px}
+    .entry .year{min-width:90px;color:var(--accent);font-weight:700}
+    .entry .body{flex:1}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+
+    /* Contact */
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    form input, form textarea{padding:10px;border-radius:8px;border:1px solid #e6e9ee}
+    form textarea{grid-column:1 / -1;min-height:120px}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:none;cursor:pointer}
+
+    footer{margin-top:32px;text-align:center;color:var(--muted);font-size:14px}
+
+    /* Responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr}
+      .photo img{height:260px}
+      nav{display:none}
+    }
+
+    /* Small utility */
+    .muted{color:var(--muted)}
+    .small{font-size:14px}
+  </style></head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">MN</div>
+        <div>
+          <div style="font-weight:700">Mohammed Niyas</div>
+          <div class="small muted">Computer Science Student</div>
+        </div>
+      </div><nav>
+    <a href="#about">About</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-card">
+      <h1 class="title">My Story — A Life in Chapters</h1>
+      <p class="subtitle">I am Mohammed Niyas, born on 21 April 2008 in Koduvally. I am a computer science student currently studying in Karuvanpoil, with big dreams of becoming a businessman in the future.</p>
+
+      <div class="meta">
+        <div class="pill">Born: 21 April 2008</div>
+        <div class="pill">From: Koduvally</div>
+        <div class="pill">Student: Karuvanpoil</div>
+      </div>
+
+      <div style="margin-top:18px">
+        <h3 style="margin:0 0 8px">Quick highlights</h3>
+        <ul class="muted small">
+          <li>Born in Koduvally</li>
+          <li>Studying Computer Science in Karuvanpoil</li>
+          <li>Dream: To become a businessman</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <aside class="photo">
+      <img src="your-photo.jpg" alt="Portrait of Mohammed Niyas">
+      <div style="margin-top:10px;font-weight:600">Mohammed Niyas</div>
+      <div class="muted small">Computer Science Student</div>
+    </aside>
+  </section>
+
+  <section id="about">
+    <div class="section-title"><h2>About me</h2></div>
+    <div class="card">
+      <p>
+        I was born on 21 April 2008 in Koduvally. My childhood was shaped by my family, school, and the community around me. As I grew, I developed a passion for technology and chose to pursue Computer Science in Karuvanpoil.
+      </p>
+      <p>
+        My ambition is to become a businessman, combining my technical knowledge with entrepreneurial skills. This autobiography is just a small step in sharing my story and aspirations with the world.
+      </p>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="section-title"><h2>Timeline</h2></div>
+    <div class="card timeline">
+      <div class="entry">
+        <div class="year">2008</div>
+        <div class="body"><strong>Born</strong> — Born in Koduvally, beginning my life journey.</div>
+      </div>
+      <div class="entry">
+        <div class="year">2024</div>
+        <div class="body"><strong>Moved to Karuvanpoil</strong> — Continued my studies in Computer Science.</div>
+      </div>
+      <div class="entry">
+        <div class="year">Future</div>
+        <div class="body"><strong>Aspiring Businessman</strong> — My dream is to build my own business and create opportunities for others.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="section-title"><h2>Gallery</h2></div>
+    <div class="card gallery">
+      <img src="your-photo.jpg" alt="Mohammed Niyas">
+      <img src="https://via.placeholder.com/400x300.png?text=School" alt="School">
+      <img src="https://via.placeholder.com/400x300.png?text=College" alt="College">
+      <img src="https://via.placeholder.com/400x300.png?text=Future+Dreams" alt="Future Dreams">
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-title"><h2>Contact</h2></div>
+    <div class="card">
+      <p class="muted small">Use this contact form for reader messages or event invites. For production, hook this to a server or service (Formspree, Netlify Forms, etc.).</p>
+
+      <form onsubmit="event.preventDefault(); alert('This form is a demo. Replace with a real backend or service.');">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © <span id="year"></span> Mohammed Niyas — All rights reserved.
+</footer>
+
+  </div>  <script>
+    // Small JS utilities
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const href = a.getAttribute('href');
+        if(href.startsWith('#')){
+          e.preventDefault();
+          const el = document.querySelector(href);
+          if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      })
+    })
+  </script></body>
+</html>
